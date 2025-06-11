@@ -1,5 +1,5 @@
 import Navbar from "../../Components/Navbar/Navbar"
-import AboutUs from "./AboutUS.jsx"
+import About from "./About.jsx"
 import Accordion from "./Accordion"
 import Features from "./Features"
 import Footer from "./Footer"
@@ -21,7 +21,7 @@ const Homepage = () => {
         <HowItWork />
       </div>
       <Testimonials />
-      <AboutUs />
+      <About />
       <Accordion />
       <Footer />
     </>
