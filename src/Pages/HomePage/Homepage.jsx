@@ -1,5 +1,5 @@
 import Navbar from "../../Components/Navbar/Navbar"
-import AboutUs from "./AboutUS"
+import About from "./About"
 import Accordion from "./Accordion"
 import Features from "./Features"
 import Footer from "./Footer"
@@ -10,7 +10,7 @@ import Testimonials from "./Testimonials"
 const Homepage = () => {
   return (
     <>
-    <Navbar/>
+      <Navbar />
       <div className="bg-[#F1F5FF]">
 
         <HeroSection />
@@ -21,7 +21,7 @@ const Homepage = () => {
         <HowItWork />
       </div>
       <Testimonials />
-      <AboutUs />
+      <About />
       <Accordion />
       <Footer />
     </>
