@@ -34,8 +34,9 @@ const Accordion = () => {
 
   return (
    <section className="w-full px-6 py-20 bg-gray-50 flex flex-col items-center">
-  <div className="w-9/12 mx-auto text-center">
-    <h2 className="text-3xl font-bold mb-8">Frequently Asked <br /> Questions</h2>
+  <div className="w-9/12 mx-auto text-center -mt-10">
+  <h2 className='lg:text-[18px] text-[#1929D6]'>FAQ</h2>
+    <h2 className="text[18px] lg:text-[48px] font-bold mb-8">Frequently Asked <br /> Questions</h2>
 
     <div className="space-y-4 text-left">
       {faqs.map((faq, index) => (
@@ -50,7 +51,9 @@ className={`${
             className="w-full text-left font-medium text-gray-800 flex justify-between items-center"
           >
             {faq.question}
-            <span className='text-2xl  '>{activeIndex === index ? '−' : '+'}</span>
+<span className=" w-10 h-10 text-2xl pb-1 flex items-center justify-center rounded-full text-gray-800 lg:border ">
+  {activeIndex === index ? '−' : '+'}
+</span>
           </button>
 
           {activeIndex === index && (
