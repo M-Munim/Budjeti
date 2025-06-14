@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const Accordion = () => {
+const Accordion = ({ noBg = false }) => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const faqs = [
@@ -10,61 +10,62 @@ const Accordion = () => {
     },
     {
       question: "How secure are wallet funds?",
-      answer: "Shipping typically takes 5-7 business days depending on your location.",
+      answer: "Funds are held in safeguarded accounts with top-tier banking partners and are protected using industry-standard encryption, fraud monitoring, and compliance protocols.",
     },
     {
       question: "Can I withdraw to multiple bank accounts?",
-      answer: "Yes, we provide 24/7 technical support through chat and email.",
+      answer: "Yes, you can link multiple business bank accounts and allocate payments or withdrawals accordingly through your dashboard.",
     },
     {
-      question: "  Is there a mobile app?",
-      answer: "Yes, we provide 24/7 technical support through chat and email.",
+      question: "Is there a mobile app?",
+      answer: "Yes, our app is available on iOS and Android, allowing you to manage payments, view balances, and approve transactions on the go.",
     },
     {
       question: "What fees apply for using the service?",
-      answer: "Yes, we provide 24/7 technical support through chat and email.",
+      answer: "Wallet-to-wallet transfers are free. Bank payouts start at 0.5%, and card top-ups incur a 1.5% flat fee. See our Pricing page for full details.",
     },
   ];
-
-
 
   const toggleAccordion = (index) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
 
   return (
-   <section className="w-full px-6 py-20 bg-gray-50 flex flex-col items-center">
-  <div className="w-9/12 mx-auto text-center -mt-10">
-  <h2 className='lg:text-[18px] text-[#1929D6]'>FAQ</h2>
-    <h2 className="text[18px] lg:text-[48px] font-bold mb-8">Frequently Asked <br /> Questions</h2>
+    <section
+      className={` w-full px-6 py-20 flex flex-col items-center`}
+    >
+      <div className="w-full lg:w-9/12 mx-auto text-center -mt-10">
+        <h2 className={`${noBg ? 'hidden' : ''} lg:text-[18px] text-[#1929D6]`}>FAQ</h2>
+        <h2 className="text[18px] lg:text-[48px] font-bold mb-8">
+          Frequently Asked <br /> Questions
+        </h2>
 
-    <div className="space-y-4 text-left">
-      {faqs.map((faq, index) => (
-        <div
-          key={index}
-className={`${
-  activeIndex === index ? "bg-[#CDE5FFEB]" : "bg-[#E2E2E5]"
-} shadow-md p-4 border border-gray-200`}
-        >
-          <button
-            onClick={() => toggleAccordion(index)}
-            className="w-full text-left font-medium text-gray-800 flex justify-between items-center"
-          >
-            {faq.question}
-<span className=" w-10 h-10 text-2xl pb-1 flex items-center justify-center rounded-full text-gray-800 lg:border ">
-  {activeIndex === index ? '−' : '+'}
-</span>
-          </button>
+        <div className="space-y-4 text-left">
+          {faqs.map((faq, index) => (
+            <div
+              key={index}
+              className={`${
+                activeIndex === index ? "bg-[#CDE5FFEB]" : "bg-[#E2E2E5]"
+              } shadow-md p-4 border border-gray-200`}
+            >
+              <button
+                onClick={() => toggleAccordion(index)}
+                className="w-full text-left font-medium text-gray-800 flex justify-between items-center"
+              >
+                {faq.question}
+                <span className="w-10 h-10 text-2xl pb-1 flex items-center justify-center rounded-full text-gray-800 lg:border">
+                  {activeIndex === index ? '−' : '+'}
+                </span>
+              </button>
 
-          {activeIndex === index && (
-            <p className="mt-3 text-gray-600">{faq.answer}</p>
-          )}
+              {activeIndex === index && (
+                <p className="mt-3 text-gray-600">{faq.answer}</p>
+              )}
+            </div>
+          ))}
         </div>
-      ))}
-    </div>
-  </div>
-</section>
-
+      </div>
+    </section>
   );
 };
 

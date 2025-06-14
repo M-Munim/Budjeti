@@ -10,7 +10,7 @@ import Testimonials from "./Testimonials"
 const Homepage = () => {
   return (
     <>
-      <Navbar />
+    <Navbar/>
       <div className="bg-[#F1F5FF]">
 
         <HeroSection />

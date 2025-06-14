@@ -5,7 +5,7 @@ const HeroSection = () => {
 
   return (
     <>
-      <section className="w-full flex items-center justify-center px-6 relative bg-white">
+      <section className="w-full flex items-center justify-center px-6 relative">
         {/* Decorative Arrow & Stars - Hidden on sm/md */}
         <div className="absolute right-[280px] top-0 z-0 hidden lg:block">
           <img className="h-96" src="/arrow.png" alt="Arrow" />
