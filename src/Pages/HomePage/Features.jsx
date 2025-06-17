@@ -13,7 +13,7 @@ const Features = () => {
         <>
             <section className="w-full  flex items-center justify-center px-6 mt-16 lg:mt-44">
 
-                <div className="w-9/12 mt-10 flex flex-col lg:flex-row items-center justify-between gap-8 mb-24">
+                <div className="w-full lg:w-9/12 mt-10 flex flex-col lg:flex-row items-center justify-between gap-8 mb-24">
                     <div className="flex-1 text-center lg:text-left relative ">
                         <img src="/public/vectorsGroup.png" className="hidden lg:block absolute w-[518px] h-[689px] -top-[200px] right-60 rotate-[165deg]" alt="" />
 

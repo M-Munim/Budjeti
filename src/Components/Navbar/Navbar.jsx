@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -31,9 +31,11 @@ const Navbar = () => {
     >
       <div className="w-9/12 mt-10 mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <div className="flex-shrink-0">
-            <img src="/logo.png" alt="Company Logo" className="h-[114px] w-[114px]" />
-          </div>
+      <div className="flex-shrink-0">
+  <Link to="/">
+    <img src="/logo.png" alt="Company Logo" className="h-[114px] w-[114px]" />
+  </Link>
+</div>
 
           <div className="hidden md:flex items-center space-x-6">
             <NavLink

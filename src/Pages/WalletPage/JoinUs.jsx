@@ -8,7 +8,7 @@ const JoinUs = () => {
    
             <div className="lg:absolute w-full lg:w-1/2 lg:right-10" >
               <h2 className="text-[24px] -mt-10 lg:-mt-0 text-center lg:text-left lg:text-[44px] p-2 font-bold text-gray-900 leading-tight">
-                Join 1+ million people who already trust us with their money
+                Over $2000,000 worth of transactions every month
               </h2>
             </div>
 
