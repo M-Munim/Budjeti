@@ -1,4 +1,6 @@
-const LegalPage = () => {
+import React from 'react'
+
+const Legal = () => {
   return (
     <section className="py-10 lg:py20 px-6">
       <div className="w-9/12 mx-auto text-gray-800">
@@ -31,12 +33,12 @@ const LegalPage = () => {
             We use cookies to enhance your browsing experience, analyze traffic, and serve targeted ads. By continuing to use our website, you consent to the use of cookies in accordance with our policy. Transparent tracking and consent options are provided in your browser or via cookie pop-ups on our site.
           </p>
         </div>
-         <div className="mt-4 text-center border-t pt-2 text-gray-500 text-sm">
+        <div className="mt-4 text-center border-t pt-2 text-gray-500 text-sm">
           Built with integrity. Powered by technology. Trusted by businesses.
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default LegalPage;
+export default Legal
