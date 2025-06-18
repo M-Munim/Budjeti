@@ -19,22 +19,22 @@ const Testimonials = () => {
                     <div className="mt-4 lg:mt-20 mx-auto">
                         <div className="flex justify-center mb-4">
                             <img
-                                src="/profile.png"
+                                src="/man.png"
                                 alt="User"
-                                className="w-24 h-24 lg:w-36 lg:h-36 object-cover rounded-full "
+                                className="w-24 h-24 lg:w-36 lg:h-36 bg-[#D9D9D9] object-cover rounded-full "
                             />
                         </div>
 
                         <div className="hidden lg:block mr-92 w-3 h-3 rounded-full bg-[#1929D6]"></div>
-                        <h3 className="text-[12px] lg:text-[24px] font-semibold">Jhon Doe</h3>
-                        <p className="text-gray-500 text-[9px] lg:text-[18px] lg:mb-3">Sydney, Australia</p>
+                        <h3 className="text-[12px] lg:text-[24px] font-semibold">Arslan Yonis</h3>
+                        <p className="text-gray-500 text-[9px] lg:text-[18px] lg:mb-3">London, United Kingdom</p>
                         <div className="flex justify-center">
                             <img className="w-14 h-2 lg:w-28 lg:h-5 " src="/stars.png" alt="" />
                         </div>
                     </div>
                     <div className="">
                            <div className="hidden lg:block flex-col items-center ">
-                        <img className=" w-14 h-14" src="/profile2.png" alt="" />
+                        <img className=" w-14 h-14" src="/profile.png" alt="" />
                         <div className="mt-44  w-3 h-3 rounded-full bg-[#D946EF]"></div>
                     </div>
                     </div>
@@ -55,7 +55,8 @@ const Testimonials = () => {
                         <img className="w-8 h-5 mt-2.5" src="./rightArrow.png" alt="" />
                     </div>
 
-                    <p className="text-black w-full lg:w-[75%] mx-auto text-center ">Lorem ipsum dolor sit amet consectetur. Et id habitant semper arcu turpis ornare tellus tortor eleifend. Platea sit at id massa sit at non bibendum viverra. Enim dui neque senectus consequat
+                    <p className="text-black w-full lg:w-[75%] mx-auto text-center ">
+                        Managing payments used to be the most time-consuming part of running my business. Since switching to this platform, everything has changed. I can now take paymets,  top up my wallet, pay vendors, and assign staff cards all in one place. It’s fast, secure, and incredibly intuitive. I even get real-time insights that help me forecast spending more accurately. This is hands down the smartest financial tool we’ve added to our workflow
                     </p>
                     <div className="hidden  lg:flex justify-end mt-[-40px] mr-8 "><img className="w-10" src="./VectorB.png" alt="" /></div>
                 </div>
