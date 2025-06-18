@@ -10,10 +10,11 @@ const Testimonials = () => {
                 </h2>
 
                 <div className="flex flex-row justify-between">
-                   
+
                     <div className="hidden lg:block flex-col items-center ">
                         <div className="mt-20 w-3 h-3 rounded-full bg-[#D946EF]"></div>
                         <img className="mt-44 w-14 h-14" src="/man.png" alt="" />
+                        {/* hello */}
                     </div>
 
                     <div className="mt-4 lg:mt-20 mx-auto">
@@ -33,10 +34,10 @@ const Testimonials = () => {
                         </div>
                     </div>
                     <div className="">
-                           <div className="hidden lg:block flex-col items-center ">
-                        <img className=" w-14 bg-gray-100 rounded-full p-1 h-14" src="/man.png" alt="" />
-                        <div className="mt-44  w-3 h-3 rounded-full bg-[#D946EF]"></div>
-                    </div>
+                        <div className="hidden lg:block flex-col items-center ">
+                            <img className=" w-14 bg-gray-100 rounded-full p-1 h-14" src="/man.png" alt="" />
+                            <div className="mt-44  w-3 h-3 rounded-full bg-[#D946EF]"></div>
+                        </div>
                     </div>
 
                 </div>
@@ -44,7 +45,7 @@ const Testimonials = () => {
 
 
 
-         
+
                 <div className="relative w-9/12 mx-auto  text-gray-600 text-base px-4 leading-relaxed">
                     <div className="flex justify-between items-center">
                         <div className="flex gap-5">
