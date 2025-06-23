@@ -13,7 +13,7 @@ const Testimonials = () => {
                    
                     <div className="hidden lg:block flex-col items-center ">
                         <div className="mt-20 w-3 h-3 rounded-full bg-[#D946EF]"></div>
-                        <img className="mt-44 w-14 h-14" src="/man.png" alt="" />
+                        {/* <img className="mt-44 w-14 h-14" src="/man.png" alt="" /> */}
                     </div>
 
                     <div className="mt-4 lg:mt-20 mx-auto">
@@ -34,7 +34,7 @@ const Testimonials = () => {
                     </div>
                     <div className="">
                            <div className="hidden lg:block flex-col items-center ">
-                        <img className=" w-14 bg-gray-100 rounded-full p-1 h-14" src="/man.png" alt="" />
+                        {/* <img className=" w-14 bg-gray-100 rounded-full p-1 h-14" src="/man.png" alt="" /> */}
                         <div className="mt-44  w-3 h-3 rounded-full bg-[#D946EF]"></div>
                     </div>
                     </div>
@@ -58,7 +58,7 @@ const Testimonials = () => {
                     <p className="text-black w-full lg:w-[75%] mx-auto text-center ">
                         Managing payments used to be the most time-consuming part of running my business. Since switching to this platform, everything has changed. I can now take paymets,  top up my wallet, pay vendors, and assign staff cards all in one place. It’s fast, secure, and incredibly intuitive. I even get real-time insights that help me forecast spending more accurately. This is hands down the smartest financial tool we’ve added to our workflow
                     </p>
-                    <div className="hidden  lg:flex justify-end mt-[-40px] mr-8 "><img className="w-10" src="./VectorB.png" alt="" /></div>
+                    <div className="hidden lg:flex justify-end  mr-8 "><img className="w-10" src="./VectorB.png" alt="" /></div>
                 </div>
 
                 <div className="flex justify-between">
