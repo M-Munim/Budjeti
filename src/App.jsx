@@ -3,6 +3,7 @@ import Homepage from './Pages/HomePage/Homepage';
 import WalletHomePage from './Pages/WalletPage/WalletHomePage';
 import SecondSection from './Pages/WalletPage/SecondSection';
 import SupportHomePage from './Pages/SupportPage/SupportHomePage';
+import Login from './Components/Login';
 
 function App() {
   return (
@@ -11,6 +12,8 @@ function App() {
       <Route path="/" element={<Homepage />} />
       <Route path="/business-wallet" element={<WalletHomePage />} />
       <Route path="/support" element={<SupportHomePage />} />
+      <Route path="/login" element={<Login />} />
+
       {/* <Route path="/send-money" element={<SecondSection />} /> */}
     </Routes>
      </Router>

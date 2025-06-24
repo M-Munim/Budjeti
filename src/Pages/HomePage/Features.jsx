@@ -15,7 +15,7 @@ const Features = () => {
 
                 <div className="w-full lg:w-9/12 mt-10 flex flex-col lg:flex-row items-center justify-between gap-8 mb-24">
                     <div className="flex-1 text-center lg:text-left relative ">
-                        <img src="/public/vectorsGroup.png" className="hidden lg:block absolute w-[518px] h-[689px] -top-[200px] right-60 rotate-[165deg]" alt="" />
+                        <img src="/vectorsGroup.png" className="hidden lg:block absolute w-[518px] h-[689px] -top-[200px] right-60 rotate-[165deg]" alt="" />
 
                         <div className="w-[250px] h-[250px] lg:w-[515px] lg:h-[300px]"
                             style={{

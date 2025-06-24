@@ -1,7 +1,7 @@
 import Navbar from "../../Components/Navbar/Navbar";
 
 const HeroSection = () => {
-  const images = ["/pic3.png", "/pic2.png", "/pic1.png"];
+  // const images = ["/pic3.png", "/pic2.png", "/pic1.png"];
 
   return (
     <>
@@ -41,7 +41,7 @@ const HeroSection = () => {
               </div>
 
               <div className="flex-1 text-center sm:text-left">
-                <div className="flex gap-2 justify-center sm:justify-start mb-2">
+                {/* <div className="flex gap-2 justify-center sm:justify-start mb-2">
                   {images.map((src, index) => (
                     <img
                       key={index}
@@ -50,7 +50,7 @@ const HeroSection = () => {
                       className="w-7 h-7 rounded-full"
                     />
                   ))}
-                </div>
+                </div> */}
                 <p className="text-sm">
                   Over £1 million of transactions a month. Everyone is happy with our service.
                 </p>
