@@ -5,7 +5,6 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle login logic here
     console.log("Login submitted");
   };
 
@@ -32,14 +31,14 @@ const Login = () => {
           </div>
           <button
             type="submit"
-            className="w-full bg-[#1929D6] text-white py-2 rounded-md hover:bg-[#0f1fb8] transition"
+            className="w-full bg-[#1929D6] text-white py-2 rounded-md hover:bg-[#0f1fb8] transition cursor-pointer"
           >
             Login
           </button>
         </form>
         <button
           onClick={() => navigate(-1)}
-          className="mt-4 text-[#1929D6] hover:underline block"
+          className="mt-4 text-[#1929D6] hover:underline block cursor-pointer"
         >
            Back
         </button>
