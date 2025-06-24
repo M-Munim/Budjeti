@@ -72,7 +72,7 @@ const Navbar = () => {
               Support
             </NavLink>
             <Link to="/login">
-              <button className="w-[152px] h-[50px] ms-4 bg-[#1929D6] text-white rounded-md">
+              <button className="w-[152px] h-[50px] ms-4 bg-[#1929D6] text-white rounded-md cursor-pointer">
                 Login
               </button>
             </Link>
