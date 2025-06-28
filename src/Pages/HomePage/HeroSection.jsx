@@ -1,4 +1,5 @@
 import Navbar from "../../Components/Navbar/Navbar";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   // const images = ["/pic3.png", "/pic2.png", "/pic1.png"];
@@ -17,7 +18,7 @@ const HeroSection = () => {
         </div>
 
         <div className="w-full lg:w-9/12 mt-24 lg:mt-10 flex flex-col md:flex-row items-center justify-between gap-8 z-10">
-          
+
           <div className="flex-1 text-center md:text-left">
             <h1 className="text-4xl md:text-5xl lg:text-[64px] font-bold text-gray-800 leading-tight mt-6">
               Empower Your <br />
@@ -30,9 +31,11 @@ const HeroSection = () => {
             </p>
 
             <div className="mt-10">
-              <button className="bg-[#1929D6] text-white px-6 py-3 rounded-md cursor-pointer transition text-sm md:text-base">
-                Get Started Today <span className="ml-2 text-xl">→</span>
-              </button>
+              <Link to="/business-wallet" >
+                <button className="bg-[#1929D6] text-white px-6 py-3 rounded-md cursor-pointer transition text-sm md:text-base">
+                  Get Started Today <span className="ml-2 text-xl">→</span>
+                </button>
+              </Link>
             </div>
 
             <div className="w-full max-w-[420px] flex flex-col sm:flex-row gap-4 mt-10 items-center sm:items-start">
@@ -51,7 +54,7 @@ const HeroSection = () => {
                     />
                   ))}
                 </div> */}
-                <p className="text-sm">
+                <p className="text-lg">
                   Over £1 million of transactions a month. Everyone is happy with our service.
                 </p>
               </div>
