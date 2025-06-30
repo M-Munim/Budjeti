@@ -9,7 +9,7 @@ const Contact = () => {
 
 
   return (
-    <section className="bg-white py-10 lg:py-20 px-6">
+    <section className="bg-white py-10 lg:py-20 md:px-6">
       <div className="text-center w-9/12 mx-auto">
         <h2 className="text-[24px] md:text-[48px] font-bold text-gray-900 mb-1 lg:mb-4">
           Let’s Talk Business
@@ -18,7 +18,7 @@ const Contact = () => {
           Have questions or want a custom demo?
         </p>
 
-        <div className="flex flex-col lg:ps-44 lg:flex-row justify-between text-center lg:text-left md:text-center text-[18px] text-gray-800">
+        <div className="flex flex-col lg:ps-44 lg:flex-row justify-between text-center lg:text-left md:text-center md:text-[18px] text-gray-800">
           <div>
             <p className="mb-2">
               📧 <span className="font-medium">support@budjeti.com</span>
