@@ -36,7 +36,7 @@ const Features = () => {
 
   <div className="flex-1 text-center lg:text-left mt-8 lg:mt-0 lg:ml-36 w-full">                        
     <div className="">
-                            <h3 className="text-[#1929D6] text-[14px] lg:text-[18px]">FEATURES</h3>
+                            <h3 className="text-[#1929D6] text-[14px] lg:text-[18px] font-bold">FEATURES</h3>
                             <h2 className="text-[18px] lg:text-[48px] font-bold ">Designed For Business.</h2>
                         </div>
 

@@ -72,6 +72,15 @@ const Navbar = () => {
             >
               Support
             </NavLink>
+
+             <NavLink
+              to="/legal-information"
+              className={({ isActive }) =>
+                isActive ? 'text-[#1929D6] font-bold' : 'text-gray-800 hover:text-[#1929D6]'
+              }
+            >
+              Legal Information
+            </NavLink>
             <Link to="/login">
               <button className="w-[152px] h-[50px] ms-4 bg-[#1929D6] text-white rounded-md cursor-pointer">
                 Login

@@ -16,7 +16,7 @@ const HowItWork = () => {
 
           <div className="flex-1 text-center lg:text-left lg:mb-36 w-full">
             <div className="">
-              <h3 className="text-[#1929D6] text-[14px] lg:text-[18px] whitespace-nowrap overflow-x-hidden">EASY TO USE</h3>
+              <h3 className="text-[#1929D6] text-[14px] lg:text-[18px] whitespace-nowrap overflow-x-hidden font-bold">EASY TO USE</h3>
               <h2 className="text-[18px] lg:text-[48px] font-bold whitespace-nowrap overflow-x-hidden">How It Works?</h2>
             </div>
 

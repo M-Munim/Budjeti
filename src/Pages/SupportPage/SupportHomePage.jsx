@@ -14,9 +14,9 @@ const SupportHomePage = () => {
         <Support />
       </div>
       <Contact />
-      <div className="bg-[#F1F5FF]">
+      {/* <div className="bg-[#F1F5FF]">
         <Legal />
-      </div>
+      </div> */}
       <Footer />
     </>
   )

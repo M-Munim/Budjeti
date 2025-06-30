@@ -4,7 +4,7 @@ const Contact = () => {
   const phoneNumbers = [
     { label: "Budgeti London", number: "02039575949" },
     { label: "Budgeti Dublin", number: "+35312636252" },
-    { label: "Termination", number: "01253207559" }
+    // { label: "Termination", number: "01253207559" }
   ];
 
 
@@ -44,7 +44,7 @@ const Contact = () => {
         {/* CTA Button */}
         <div className="mt-12">
           <Link
-            to="/support"
+            to="/contact-form"
             className="bg-[#1929D6] cursor-pointer text-white px-8 py-3 rounded-xl font-semibold transition"
           >
             Schedule a Demo
