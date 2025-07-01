@@ -13,7 +13,7 @@ const Features = () => {
         <>
             <section className="w-full  flex items-center justify-center px-6 mt-16 lg:mt-44">
 
-                <div className="w-full lg:w-9/12 mt-10 flex flex-col lg:flex-row items-center justify-between gap-8 mb-24">
+                <div className="w-full lg:w-9/12 mt-10 flex flex-col xl:flex-row items-center justify-between gap-8 mb-20 xl:mb-24">
                     <div className="flex-1 text-center lg:text-left relative ">
                         <img src="/vectorsGroup.png" className="hidden lg:block absolute w-[518px] h-[689px] -top-[200px] right-60 rotate-[165deg]" alt="" />
 
@@ -34,26 +34,31 @@ const Features = () => {
                     </div>
 
 
-  <div className="flex-1 text-center lg:text-left mt-8 lg:mt-0 lg:ml-36 w-full">                        
-    <div className="">
+                    <div className="flex-1 text-left md:text-center xl:text-left mt-8 lg:mt-40 xl:mt-0 xl:ml-36 w-full">
+                        <div className="">
                             <h3 className="text-[#1929D6] text-[14px] lg:text-[18px] font-bold">FEATURES</h3>
-                            <h2 className="text-[18px] lg:text-[48px] font-bold ">Designed For Business.</h2>
+                            <h2 className="text-[18px] lg:text-[30px] xl:text-[48px] font-bold ">Designed For Business.</h2>
                         </div>
 
 
-                          
 
-                        <div className="flex flex-col gap-5 mt-4 lg:mt-10">
+
+                        <div className="flex flex-col gap-3.5 lg:gap-5 mt-4 lg:mt-10">
                             {features.map((feature, index) => (
-                                <div key={index} className="flex items-center space-x-3 ">
-                                    <img src={feature.icon} alt="Feature Icon" className="w-6 h-6" />
-                                    <p className="whitespace-nowrap text-gray-800">{feature.text}</p>
+                                <div key={index} className="flex items-center justify-start md:justify-center xl:justify-start space-x-3">
+                                    <img
+                                        src={feature.icon}
+                                        alt="Feature Icon"
+                                        className="w-3.5 h-3.5 lg:w-6 lg:h-6"
+                                    />
+                                    <p className="text-gray-800">{feature.text}</p>
                                 </div>
                             ))}
                         </div>
 
+
                         <div className="relative">
-                            <div className="hidden lg:block absolute right-56 top-32">
+                            <div className="hidden xl:block absolute right-56 top-32">
                                 <img className="w-10" src="./Star.png" alt="" />
                             </div>
                         </div>

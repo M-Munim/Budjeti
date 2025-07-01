@@ -24,7 +24,7 @@ const About = () => {
         {/* Text Content */}
         <div className="text-center lg:text-left z-10">
           <div className="flex flex-col lg:flex-row lg:justify-between items-center lg:items-start">
-            <h2 className="mx-auto text-3xl lg:text-[48px] font-semibold mb-4">About Us</h2>
+            <h2 className="mx-auto pt-10 text-3xl lg:text-[48px] font-semibold mb-4">About Us</h2>
           </div>
 
           <p className="text-white leading-relaxed w-full mx-auto text-center">

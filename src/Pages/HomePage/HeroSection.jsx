@@ -7,13 +7,13 @@ const HeroSection = () => {
   return (
     <>
       <section className="w-full flex items-center justify-center px-6 relative">
-        <div className="absolute right-[280px] top-0 z-0 hidden lg:block">
+        <div className="absolute right-[280px] top-0 z-0 hidden xl:block">
           <img className="h-96" src="/arrow.png" alt="Arrow" />
         </div>
-        <div className="absolute right-64 top-32 hidden lg:block">
+        <div className="absolute right-64 top-32 hidden xl:block">
           <img className="w-10" src="/Star.png" alt="Star Top" />
         </div>
-        <div className="absolute right-[650px] bottom-48 hidden lg:block">
+        <div className="absolute right-[650px] bottom-48 hidden xl:block">
           <img className="w-8" src="/Star.png" alt="Star Bottom" />
         </div>
 

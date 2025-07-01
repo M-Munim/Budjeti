@@ -32,22 +32,21 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`w-full fixed left-0 z-50 transition-transform duration-300 ${
-        hideNavbar ? "-translate-y-full" : "translate-y-0"
-      } ${scrolled ? "bg-white shadow-md" : "bg-transparent"}`}
+      className={`w-full fixed left-0 z-50 transition-transform duration-300 ${hideNavbar ? "-translate-y-full" : "translate-y-0"
+        } ${scrolled ? "bg-white shadow-md" : "bg-transparent"}`}
     >
-      <div className="w-9/12 mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-9/12 mx-auto px-4 sm:px-6 md:px-0 xl:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link to="/">
               {/* <img src="/logo.png" alt="Company Logo" className="h-[100px] w-[100px]" /> */}
-              <img src="/logo.png" alt="Company Logo" className="h-[100px] w-[100px] md:h-[150px] md:w-[150px]" />
+              <img src="/logo.png" alt="Company Logo" className="h-[100px] w-[100px] md:h-[80px] md:w-[80px] xl:h-[150px] xl:w-[150px]" />
             </Link>
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-6">
+          <div className="hidden md:flex items-center md:space-x-2.5 lg:space-x-6">
             <NavLink
               to="/"
               className={({ isActive }) =>
@@ -55,6 +54,14 @@ const Navbar = () => {
               }
             >
               Home
+            </NavLink>
+              <NavLink
+              to="/about-us"
+              className={({ isActive }) =>
+                isActive ? 'text-[#1929D6] font-bold' : 'text-gray-800 hover:text-[#1929D6]'
+              }
+            >
+              About Us
             </NavLink>
             <NavLink
               to="/business-wallet"
@@ -64,6 +71,8 @@ const Navbar = () => {
             >
               Business Wallet
             </NavLink>
+
+            
             <NavLink
               to="/support"
               className={({ isActive }) =>
@@ -73,7 +82,7 @@ const Navbar = () => {
               Support
             </NavLink>
 
-             <NavLink
+            <NavLink
               to="/legal-information"
               className={({ isActive }) =>
                 isActive ? 'text-[#1929D6] font-bold' : 'text-gray-800 hover:text-[#1929D6]'
@@ -82,7 +91,7 @@ const Navbar = () => {
               Legal Information
             </NavLink>
             <Link to="/login">
-              <button className="w-[152px] h-[50px] ms-4 bg-[#1929D6] text-white rounded-md cursor-pointer">
+              <button className="w-[152px] h-[50px] md:w-[90px] md:h-[30px] xl:w-[152px] xl:h-[50px] ms-4 bg-[#1929D6] text-white rounded-md cursor-pointer">
                 Login
               </button>
             </Link>
@@ -99,7 +108,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden bg-white shadow-lg px-4 pt-4 pb-6 space-y-4">
+        <div className="lg:hidden xl:hidden bg-white shadow-lg px-4 pt-4 pb-6 space-y-4">
           <NavLink
             to="/"
             className="block text-gray-800 hover:text-[#1929D6]"
@@ -114,12 +123,27 @@ const Navbar = () => {
           >
             Business Wallet
           </NavLink>
+            <NavLink
+            to="/about-us"
+            className="block text-gray-800 hover:text-[#1929D6]"
+            onClick={() => setMenuOpen(false)}
+          >
+          About Us
+          </NavLink>
           <NavLink
             to="/support"
             className="block text-gray-800 hover:text-[#1929D6]"
             onClick={() => setMenuOpen(false)}
           >
             Support
+          </NavLink>
+
+          <NavLink
+            to="/legal-information"
+            className="block text-gray-800 hover:text-[#1929D6]"
+            onClick={() => setMenuOpen(false)}
+          >
+            Legal Information
           </NavLink>
           <Link to="/login" onClick={() => setMenuOpen(false)}>
             <button className="w-full bg-[#1929D6] text-white rounded-lg py-2 transition">

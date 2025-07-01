@@ -44,7 +44,7 @@ const Contact = () => {
         {/* CTA Button */}
         <div className="mt-12">
           <Link
-            to="/contact-form"
+            to="/about-us"
             className="bg-[#1929D6] cursor-pointer text-white px-8 py-3 rounded-xl font-semibold transition"
           >
             Schedule a Demo

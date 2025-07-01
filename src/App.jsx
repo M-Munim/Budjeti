@@ -5,6 +5,7 @@ import SupportHomePage from './Pages/SupportPage/SupportHomePage';
 import Login from './Components/Login';
 import ContactForm from './Pages/HomePage/Contactform';
 import Legalhomepage from './Pages/LegalPage/Legalhomepage';
+import AboutHome from './Pages/AboutPage/aboutHome';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Route path="/login" element={<Login />} />
       <Route path="/contact-form" element={<ContactForm />} />
       <Route path="/legal-information" element={<Legalhomepage />} />
+      <Route path="/about-us" element={<AboutHome />} />
     </Routes>
      </Router>
 

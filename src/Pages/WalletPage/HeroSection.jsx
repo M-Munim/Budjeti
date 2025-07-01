@@ -95,7 +95,7 @@ const HeroSection = () => {
             </div>
 
             {/* Main Content */}
-            <div className="max-w-7xl mx-auto flex flex-col xl:flex-row items-center justify-between gap-12 pt-24 pb-20 relative z-10">
+            <div className="max-w-7xl mx-auto flex flex-col xl:flex-row items-center justify-between gap-12 pt-44 pb-20 relative z-10">
                 {/* Left Content */}
                 <div className="flex-1 text-center xl:text-left">
                     <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-[64px] font-bold text-gray-800 leading-tight max-w-lg mx-auto xl:mx-0">

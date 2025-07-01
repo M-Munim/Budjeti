@@ -171,9 +171,9 @@ const ContactForm = () => {
           {/* Submit Button */}
           <button
             type="submit"
-            className="w-full bg-[#1929D6] text-white py-3 rounded-lg font-semibold hover:bg-[#20a690] transition"
+            className="p-5 bg-[#1929D6] text-white py-3 rounded-lg font-semibold hover:bg-[#20a690] transition"
           >
-            Submit Your Interest to info@Budjeti.com
+            Submit 
           </button>
         </form>
       </div>

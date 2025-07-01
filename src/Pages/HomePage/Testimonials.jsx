@@ -82,7 +82,7 @@ const Testimonials = () => {
           </div>
         </div>
 
-        <div className="relative w-9/12 mx-auto text-gray-600 text-base px-4 leading-relaxed mt-6">
+        <div className="relative w-full lg:w-9/12 mx-auto text-gray-600 text-base px-4 leading-relaxed mt-6">
           <div className="flex justify-between items-center mb-4">
             <div className="flex gap-5">
               <img
