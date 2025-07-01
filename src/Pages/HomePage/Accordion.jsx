@@ -32,34 +32,34 @@ const Accordion = ({ noBg = false }) => {
 
   return (
     <section
-      className={` w-full px-6 py-20 flex flex-col items-center`}
+      className={` w-full  py-20 flex flex-col items-center`}
     >
       <div className="w-full lg:w-9/12 mx-auto text-center -mt-10">
         <h2 className={`${noBg ? 'hidden' : ''} lg:text-[18px] text-[#1929D6]`}>FAQ</h2>
-        <h2 className="text[18px] lg:text-[48px] font-bold mb-8">
+        <h2 className="text-2xl lg:text-[48px] font-bold mb-8">
           Frequently Asked <br /> Questions
         </h2>
 
-        <div className="space-y-4 text-left">
+        <div className="space-y-2 text-left">
           {faqs.map((faq, index) => (
             <div
               key={index}
               className={`${
                 activeIndex === index ? "bg-[#CDE5FFEB]" : "bg-[#E2E2E5]"
-              } shadow-md p-4 border border-gray-200`}
+              } shadow-md p-2 border border-gray-200`}
             >
               <button
                 onClick={() => toggleAccordion(index)}
                 className="w-full text-left font-medium text-gray-800 flex justify-between items-center"
               >
                 {faq.question}
-                <span className="w-10 h-10 text-2xl pb-1 flex items-center justify-center rounded-full text-gray-800 lg:border">
+                <span className="w-10 h-10 text-[20px] pb-1 flex items-center justify-center rounded-full text-gray-800 lg:border">
                   {activeIndex === index ? '−' : '+'}
                 </span>
               </button>
 
               {activeIndex === index && (
-                <p className="mt-3 text-gray-600">{faq.answer}</p>
+                <p className="mt-3 text-gray-600 text-sm md:text-base" >{faq.answer}</p>
               )}
             </div>
           ))}
