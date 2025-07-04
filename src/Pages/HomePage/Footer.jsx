@@ -56,11 +56,13 @@ const Footer = () => {
         <div className="flex-1 text-center md:text-left">
           <h3 className="text-lg font-semibold mb-2">Newsletter</h3>
           <p className="text-sm mb-3">Stay Up To Date</p>
-          <form className="flex flex-col sm:flex-row items-center justify-center md:justify-start bg-white rounded-md overflow-hidden">
+          {/* <form className="flex flex-col sm:flex-row items-center justify-center md:justify-start bg-white rounded-md overflow-hidden"> */}
+            <div className='flex bg-white rounded-md overflow-hidden'>
             <input
               type="email"
               placeholder="Your email"
               className="p-2 w-full sm:w-auto flex-1 text-black outline-none"
+          
             />
             <button
               type="submit"
@@ -68,7 +70,9 @@ const Footer = () => {
             >
               <i className="fas fa-arrow-right"></i>
             </button>
-          </form>
+          
+          </div>
+          {/* </form> */}
         </div>
       </div>
 
