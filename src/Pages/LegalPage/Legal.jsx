@@ -1,26 +1,32 @@
 import React from 'react'
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 const Legal = () => {
+
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.replace('#', '');
+      const element = document.getElementById(id);
+      if (element) {
+        // Smooth scroll
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      // Scroll to top if no hash
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }, [location]);
   return (
-    <section className="py-10 lg:py20 px-6">
+    <section className="py-10 lg:py20 px-6 " id="privacy-policy">
       <div className="w-9/12 mx-auto text-gray-800">
-        <h1 className="text-[24px] md:text-[48px] font-bold mb-4 lg:mb-12 text-center text-gray-900">
+        {/* <h1 className="text-[24px] md:text-[48px] font-bold mb-4 lg:mb-12 text-center text-gray-900">
           Legal Information
-        </h1>
+        </h1> */}
 
-        {/* <div className="mb-4 lg:mb-12">
-          <h2 className="text-[18px] lg:text-[28px] font-semibold mb-2 lg:mb-4 text-gray-900">Privacy Policy</h2>
-          <ul className="list-disc list-inside space-y-3 text-[17px]">
-            <li>We are committed to protecting your privacy. This policy outlines how we collect, use, and safeguard your personal and business data.</li>
-            <li>We collect information you provide when creating an account, verifying your business, and using our services.</li>
-            <li>Your data is processed lawfully and transparently, only for the purposes of providing our services, complying with regulations (like KYC/AML), and improving user experience.</li>
-            <li>We implement strict security measures including encryption, access control, and third-party audits.</li>
-            <li>We do not sell or rent your personal information. We may share data only with trusted providers necessary for service delivery and compliance.</li>
-            <li>Users have the right to access, correct, or delete their data by contacting <span className="text-blue-700 underline">info@Budjeti.com</span>.</li>
-          </ul>
-        </div> */}
-
-        <div className="mb-4 lg:mb-12">
+        <div className="mb-4 lg:mb-12 mt-10">
           <h2 className="text-[18px] lg:text-[28px] font-semibold mb-2 lg:mb-4 text-gray-900">
             Privacy Policy
           </h2>
@@ -81,14 +87,7 @@ const Legal = () => {
             <strong>Contact Us:</strong> If you have any questions about this Privacy Policy, please email us at <span className="text-blue-700 underline">support@budjeti.com</span>.
           </p>
         </div>
-
-        {/* <div className="mb-12">
-          <h2 className="text-[18px] lg:text-[28px] font-semibold mb-2 lg:mb-4 text-gray-900">Terms of Service</h2>
-          <p className="text-[17px]">
-            This section includes the full commercial terms of service including wallet usage, dispute policies, service limitations, and other important agreements that users accept when registering on Budjeti. For the full details, please contact our legal department at <span className="text-blue-700 underline">info@Budjeti.com</span>.
-          </p>
-        </div> */}
-        <div className="mb-12">
+        <div className="mb-12 scroll-mt-24" id="terms-of-service">
           <h2 className="text-[18px] lg:text-[28px] font-semibold mb-2 lg:mb-4 text-gray-900">
             Terms of Service
           </h2>

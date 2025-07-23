@@ -6,10 +6,12 @@ import Login from './Components/Login';
 import ContactForm from './Pages/HomePage/Contactform';
 import Legalhomepage from './Pages/LegalPage/Legalhomepage';
 import Abouttwo from './Pages/AboutPage/Abouttwo';
+import ScrollToTop from './ScrollToTop';
 
 function App() {
   return (
     <Router>
+       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/business-wallet" element={<WalletHomePage />} />

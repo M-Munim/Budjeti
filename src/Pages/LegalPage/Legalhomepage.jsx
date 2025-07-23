@@ -6,11 +6,11 @@ import Footer from '../HomePage/Footer'
 const Legalhomepage = () => {
   return (
     <>
-    <Navbar/>
-<div className="pt-10">
-         <Legal/> 
-</div>
-<Footer/>
+      <Navbar />
+      <div className="pt-10">
+        <Legal />
+      </div>
+      <Footer />
 
     </>
   )

@@ -41,7 +41,7 @@ const Navbar = () => {
           <div className="flex-shrink-0">
             <Link to="/">
               {/* <img src="/logo.png" alt="Company Logo" className="h-[100px] w-[100px]" /> */}
-              <img src="/logo.png" alt="Company Logo" className="h-[100px] w-[100px] md:h-[80px] md:w-[80px] xl:h-[150px] xl:w-[150px]" />
+              <img src="/logo.png" alt="Company Logo" className="w-36 md:w-52" />
             </Link>
           </div>
 
@@ -55,14 +55,7 @@ const Navbar = () => {
             >
               Home
             </NavLink>
-              <NavLink
-              to="/about-us"
-              className={({ isActive }) =>
-                isActive ? 'text-[#1929D6] font-bold' : 'text-gray-800 hover:text-[#1929D6]'
-              }
-            >
-              About Us
-            </NavLink>
+
             <NavLink
               to="/business-wallet"
               className={({ isActive }) =>
@@ -72,7 +65,7 @@ const Navbar = () => {
               Business Wallet
             </NavLink>
 
-            
+
             <NavLink
               to="/support"
               className={({ isActive }) =>
@@ -83,13 +76,22 @@ const Navbar = () => {
             </NavLink>
 
             <NavLink
+              to="/about-us"
+              className={({ isActive }) =>
+                isActive ? 'text-[#1929D6] font-bold' : 'text-gray-800 hover:text-[#1929D6]'
+              }
+            >
+              About Us
+            </NavLink>
+
+            {/* <NavLink
               to="/legal-information"
               className={({ isActive }) =>
                 isActive ? 'text-[#1929D6] font-bold' : 'text-gray-800 hover:text-[#1929D6]'
               }
             >
               Legal Information
-            </NavLink>
+            </NavLink> */}
             <Link to="/login">
               <button className="w-[152px] h-[50px] md:w-[90px] md:h-[30px] xl:w-[152px] xl:h-[50px] ms-4 bg-[#1929D6] text-white rounded-md cursor-pointer">
                 Login
@@ -99,7 +101,7 @@ const Navbar = () => {
 
           {/* Mobile Hamburger */}
           <div className="md:hidden flex items-center">
-            <button onClick={() => setMenuOpen(!menuOpen)} className="text-2xl text-gray-800">
+            <button onClick={() => setMenuOpen(!menuOpen)} className="text-2xl text-gray-800 cursor-pointer">
               <FontAwesomeIcon icon={menuOpen ? faTimes : faBars} />
             </button>
           </div>
@@ -123,13 +125,7 @@ const Navbar = () => {
           >
             Business Wallet
           </NavLink>
-            <NavLink
-            to="/about-us"
-            className="block text-gray-800 hover:text-[#1929D6]"
-            onClick={() => setMenuOpen(false)}
-          >
-          About Us
-          </NavLink>
+
           <NavLink
             to="/support"
             className="block text-gray-800 hover:text-[#1929D6]"
@@ -139,12 +135,20 @@ const Navbar = () => {
           </NavLink>
 
           <NavLink
+            to="/about-us"
+            className="block text-gray-800 hover:text-[#1929D6]"
+            onClick={() => setMenuOpen(false)}
+          >
+            About Us
+          </NavLink>
+
+          {/* <NavLink
             to="/legal-information"
             className="block text-gray-800 hover:text-[#1929D6]"
             onClick={() => setMenuOpen(false)}
           >
             Legal Information
-          </NavLink>
+          </NavLink> */}
           <Link to="/login" onClick={() => setMenuOpen(false)}>
             <button className="w-full bg-[#1929D6] text-white rounded-lg py-2 transition">
               Login

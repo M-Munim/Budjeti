@@ -9,13 +9,15 @@ const Footer = () => {
     { icon: 'fa-youtube', url: '#' },
   ];
 
-  const quickLinks = [
-    { label: 'Home', url: '/' },
-    { label: 'About Us', url: '/about-us' },
-    { label: 'Business Wallet', url: '/business-wallet' },
-    { label: 'Support', url: '/support' },
-    { label: 'Legal Information', url: '/legal-information' },
-  ];
+const quickLinks = [
+  { label: 'Home', url: '/' },
+  { label: 'About Us', url: '/about-us' },
+  { label: 'Business Wallet', url: '/business-wallet' },
+  { label: 'Support', url: '/support' },
+  { label: 'Privacy Policy', url: '/legal-information#privacy-policy' },
+  { label: 'Terms of Service', url: '/legal-information#terms-of-service' },
+];
+
 
   return (
     <footer className="bg-[#0A18F2] text-white py-10 px-6">

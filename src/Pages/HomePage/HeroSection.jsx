@@ -38,7 +38,7 @@ const HeroSection = () => {
               </Link>
             </div>
 
-            <div className="w-full max-w-[420px] flex flex-col sm:flex-row gap-4 mt-5 xl:mt-10 items-center sm:items-start mx-auto xl:mx-0">
+            <div className="w-full max-w-[520px] flex flex-col sm:flex-row gap-4 mt-5 xl:mt-10 items-center sm:items-start mx-auto xl:mx-0">
               <div className="w-[60px] h-[65px] rounded-[13px] text-white bg-black flex items-center justify-center text-lg font-semibold">
                 1.0m
               </div>
@@ -55,7 +55,7 @@ const HeroSection = () => {
                   ))}
                 </div> */}
                 <p className="text-base lg:text-lg xl:text-lg">
-                  Over £1 million of transactions a month. Everyone is happy with our service.
+                  We process over £1 million in transactions each month, with consistently high customer satisfaction 
                 </p>
               </div>
             </div>

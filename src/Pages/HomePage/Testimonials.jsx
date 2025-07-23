@@ -54,7 +54,7 @@ const Testimonials = () => {
   return (
     <section className="w-full py-20 px-6 flex items-center justify-center">
       <div className="text-center max-w-3xl">
-        <h4 className="text-[#6366F1] uppercase tracking-widest text-[14px] lg:text-[18px] font-semibold mb-2">
+        <h4 className="text-[#6366F1] uppercase tracking-widest text-[14px] lg:text-[18px] font-bold mb-2">
           Testimonials
         </h4>
         <h2 className="text-[18px] lg:text-[48px] font-bold text-gray-900 lg:mb-10">

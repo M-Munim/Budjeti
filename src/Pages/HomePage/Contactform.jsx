@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -42,6 +43,19 @@ const ContactForm = () => {
     alert('Your interest has been submitted to info@Budjeti.com');
   };
 
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash === '#contact') {
+      const el = document.getElementById('contact');
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }, [location]);
+
   return (
     <section className="bg-[#F1F5FF] text-black py-16 px-4 md:px-10">
       <div className="max-w-4xl mx-auto">
@@ -50,7 +64,7 @@ const ContactForm = () => {
           We’d love to learn more about your business and how we can help streamline your financial operations. Please fill out the form below and a member of our team will be in touch shortly.
         </p>
 
-        <form onSubmit={handleSubmit} className="space-y-6">
+        <form onSubmit={handleSubmit} className="space-y-6 scroll-mt-40" id='contact'>
           {/* Full Name */}
           <input
             type="text"
