@@ -62,10 +62,10 @@
 import { Link } from "react-router-dom";
 
 const Contact = () => {
-  const phoneNumbers = [
-    { label: "Budgeti London", number: "02039575949" },
-    { label: "Budgeti Dublin", number: "+35312636252" },
-  ];
+  // const phoneNumbers = [
+  //   { label: "Budgeti London", number: "02039575949" },
+  //   { label: "Budgeti Dublin", number: "+35312636252" },
+  // ];
 
   return (
     <section className="bg-white py-10 md:py-16 lg:py-20 px-4 md:px-6">
@@ -81,31 +81,51 @@ const Contact = () => {
         </p>
 
         {/* Contact Info Grid */}
-        <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6 md:gap-10 text-center md:text-left text-sm sm:text-base text-gray-800">
-          {/* Email */}
-          <div className="flex-1">
-            <p className="mb-2">
-              📧 <span className="font-medium">support@budjeti.com</span>
-            </p>
-          </div>
-
-          {/* Phone Numbers */}
-          <div className="flex-1">
-            {phoneNumbers.map((phone, index) => (
-              <p key={index} className="mb-2">
-                📞 <span className="font-medium">{phone.label}:</span>{" "}
-                {phone.number}
+        {/* <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6 md:gap-10 text-center md:text-left text-sm sm:text-base text-gray-800">
+          <div className=" flex w-9/12 m-auto gap-10">
+            <div className=" w-1/2  flex flex-col items-center ">
+              <p className="mb-2">
+                📍 51 Bracken Road, Sandyford  D18 Dublin Ireland
               </p>
-            ))}
-          </div>
+              <p className="mb-2">
+                📞 Budgeti London: 02039575949
+              </p>
 
-          {/* Address */}
-          <div className="flex-1">
-            <p className="mb-2">
-              📍 51 Bracken Road, Sandyford D18 Dublin Ireland
-            </p>
+            </div>
+            <div className=" w-1/2 flex flex-col items-center">
+              <p className="mb-2">
+                📧 <span className="font-medium">support@budjeti.com</span>
+              </p>
+              <p className="mb-2">
+                📞 Budgeti Dublin: +35312636252
+              </p>
+            </div>
+          </div>
+        </div> */}
+        <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6 md:gap-10 text-center md:text-left text-sm sm:text-base text-gray-800">
+          <div className="flex w-full sm:w-10/12 md:w-9/12 m-auto gap-6 sm:gap-10">
+            {/* Column 1 */}
+            <div className="w-1/2 flex flex-col items-center text-xs sm:text-sm md:text-base">
+              <p className="mb-2">
+                📍 51 Bracken Road, Sandyford D18 Dublin Ireland
+              </p>
+              <p className="mb-2">
+                📞 Budgeti London: <span className="font-medium">02039575949</span>
+              </p>
+            </div>
+
+            {/* Column 2 */}
+            <div className="w-1/2 flex flex-col items-center text-xs sm:text-sm md:text-base">
+              <p className="mb-2">
+                📧 <span className="font-medium">support@budjeti.com</span>
+              </p>
+              <p className="mb-2">
+                📞 Budgeti Dublin: <span className="font-medium">+35312636252</span>
+              </p>
+            </div>
           </div>
         </div>
+
 
         {/* CTA Button */}
         <div className="mt-10 md:mt-12">
